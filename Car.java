@@ -7,7 +7,7 @@ public class Car {
     private double price;
     private String registrationNumber;
 
-    // Конструктор
+    
     public Car(int id, String brand, String model, int year, String color, double price, String registrationNumber) {
         this.id = id;
         this.brand = brand;
@@ -18,7 +18,7 @@ public class Car {
         this.registrationNumber = registrationNumber;
     }
 
-    // Геттеры и сеттеры
+    
     public int getId() {
         return id;
     }
