@@ -3,7 +3,7 @@ import java.util.Calendar;
 
 public class Main {
     public static void main(String[] args) {
-        // Создаем массив машин для тестирования
+    
         Car[] cars = {
             new Car(1, "Toyota", "Camry", 2020, "Black", 25000, "AB123CD"),
             new Car(2, "Honda", "Civic", 2019, "White", 22000, "EF456GH"),
@@ -12,7 +12,6 @@ public class Main {
             new Car(5, "Toyota", "RAV4", 2015, "Silver", 18000, "QR345ST")
         };
 
-        // Тестируем метод getCarByBrend
         Car[] toyotaCars = getCarByBrend(cars, "Toyota");
         System.out.println("Машины марки Toyota:");
         for (Car car : toyotaCars) {
@@ -21,7 +20,7 @@ public class Main {
 
         System.out.println("\n--- Тестирование второго метода ---");
         
-        // Тестируем метод getCarByBrendAndYearOperational
+        
         Car[] oldToyotaCars = getCarByBrendAndYearOperational(cars, "Toyota", 3);
         System.out.println("Машины Toyota старше 3 лет:");
         for (Car car : oldToyotaCars) {
